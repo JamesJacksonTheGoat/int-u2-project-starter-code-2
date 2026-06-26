@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="team.css">
+  <title>My Portfolio - Contact</title>
+</head>
+<body>
+  
+   <nav class="navbar">
+    <a class = "logo" href="../Portfolio.html">My Portfolio</a>
+    <a href="../Portfolio.html">Home</a>
+    <a href="../Portfolio.html#about">About</a>
+    <a href="../Portfolio.html#projects">Projects</a>
+    <a href="../Portfolio.html#skills">Skills</a>
+    <a href="team.html">Contact</a>
+</nav>
+
+  <main class="main-content">
+    <section class="content-box" id="contact-card">
+      <h2>Contact</h2>
+
+      <div class="card contact-grid">
+        <div class="contact-details">
+          <h3>Isaac Jackson</h3>
+          <p> </p>
+
+          <p>
+            <strong>GitHub:</strong>
+            <a href="https://github.com/JamesJacksonTheGoat" target="_blank" rel="noopener">
+              JamesJacksonTheGoat
+            </a>
+          </p>
+
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:isaacjack413@gmail.com">
+              isaacjack413@gmail.com
+            </a>
+          </p>
+          
+        </div>
+
+        <div class="contact-form">
+          <form action="https://formsubmit.co/isaacjack413@gmail.com" method="POST">
+
+            <input type="hidden" name="_subject" value="New Portfolio Contact Form Submission">
+
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..." required>
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..." required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+            <label for="subject">Message</label>
+            <textarea id="subject" name="message" placeholder="Write something..." style="height:120px" required></textarea>
+
+            <button type="submit" class="button">Send Message</button>
+
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
+```
