@@ -261,3 +261,19 @@ body {
 html {
     scroll-behavior: smooth;
 }
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
+}
+
+.project-card {
+    text-align: center;
+}
+
+.project-card h3 {
+    margin-bottom: 10px;
+    color: black;
+}
