@@ -2,131 +2,83 @@
   box-sizing: border-box;
 }
 
-body {
+html, body {
   margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+
   font-family: Arial, sans-serif;
-  background: url(https://assets.westchestermagazine.com/wp-content/uploads/2024/05/04-The-X-Mansion-Icons-Airbnb-Credit-Holly-Andres.jpg) no-repeat center center fixed;
+
+  background-image: url("https://assets.westchestermagazine.com/wp-content/uploads/2024/05/04-The-X-Mansion-Icons-Airbnb-Credit-Holly-Andres.jpg");
   background-size: cover;
-  color: #333;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  color: #000000;
 }
 
 .navbar {
-  background: rgba(0, 0, 0, 0.65);
+  background: rgba(0,0,0,0.65);
   display: flex;
-  flex-wrap: wrap;
   gap: 10px;
   padding: 12px 20px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
 }
 
 .navbar a {
-  color: #ffffff;
+  color: white;
   text-decoration: none;
   padding: 8px 12px;
 }
 
-.navbar a.logo {
-  font-weight: 700;
-}
-
 .navbar a:hover {
-  background: #d70000;
+  background: red;
   border-radius: 6px;
 }
 
 .main-content {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 0 20px;
+  max-width: 1100px;
+  margin: 25px auto;
+  padding: 10px;
 }
 
 .content-box {
   background: #ffdd00;
   border-radius: 14px;
-  padding: 28px;
-  margin-top: 24px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-}
-
-.content-box h2,
-.card h3 {
-  margin-top: 0;
-}
-
-.content-box p,
-.card p {
-  margin: 0 0 12px;
-  color: #000000;
+  padding: 16px;
 }
 
 .card {
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255,255,255,0.95);
   border-radius: 14px;
-  padding: 20px;
+  padding: 18px;
 }
 
 .contact-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px;
-  align-items: start;
-}
-
-.contact-details h3 {
-  margin: 0 0 6px;
-  color: #000;
-}
-
-.contact-details p {
-  color: #000;
-}
-
-.contact-details a {
-  color: #007acc;
-  text-decoration: underline;
-}
-
-.contact-form label {
-  display: block;
-  margin-top: 12px;
-  font-weight: 600;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 16px;
 }
 
 .contact-form input,
-.contact-form select,
 .contact-form textarea {
   width: 100%;
-  padding: 10px;
+  padding: 8px;
   margin-top: 6px;
-  border: 1px solid #ccc;
   border-radius: 8px;
-  font-size: 14px;
+  border: 1px solid #ccc;
 }
 
-.button {
-  background: #000;
-  color: #fff;
+button {
+  margin-top: 10px;
+  padding: 8px 14px;
+  background: black;
+  color: white;
   border: none;
   border-radius: 8px;
-  padding: 10px 18px;
   cursor: pointer;
 }
-
-.button.primary {
-  background: #007acc;
-}
-
-.button:hover {
-  opacity: 0.95;
-}
-
-@media (max-width: 700px) {
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-
-    

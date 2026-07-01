@@ -44,10 +44,11 @@ body {
   max-width: 760px;
   margin: 30px auto;
   padding: 0 16px;
+  color: #000000;
 }
 
 .hero {
-  background: #980505;
+  background: #ffdd00;
   border-radius: 14px;
   padding: 22px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
@@ -80,6 +81,15 @@ body {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
   margin-top: 20px;
+}
+
+
+.skills-grid * {
+  transition: 0.3s ease;
+}
+
+.skills-grid *:hover {
+  transform: scale(1.05);
 }
 
 .skills-image {
@@ -276,4 +286,14 @@ html {
 .project-card h3 {
     margin-bottom: 10px;
     color: black;
+}
+
+.Purdue {
+  width: 100%;
+  height: 450px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
+  margin: auto;
 }
